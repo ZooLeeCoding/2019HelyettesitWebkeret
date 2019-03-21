@@ -20,7 +20,8 @@ export class WriterComponent implements OnInit {
   }
 
   navigateReader() {
-    this.router.navigate(["/reader/"+this.myInput]);
+    this.router.navigate(["/reader/"+this.myInput, {param1: "valaki",
+  abcd: "edfg", datum: "1334.07.12"}]);
   }
 
 }

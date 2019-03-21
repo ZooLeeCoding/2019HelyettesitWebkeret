@@ -7,7 +7,7 @@
       <a routerLink="/writer">Writer</a>
     </li>
     <li>
-      <a routerLink="/reader/i%20came%20from%20main">Reader</a>
+      <a [routerLink]="['/reader/i came from main', {main: '123456'}]">Reader</a>
     </li>
   </ul>
 </div>
