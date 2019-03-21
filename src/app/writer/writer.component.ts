@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-writer',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WriterComponent implements OnInit {
 
-  constructor() { }
+  myInput: String;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  navigateMain() {
+    this.router.navigate(["/main"]);
+  }
+
+  navigateReader() {
+    this.router.navigate(["/reader/"+this.myInput]);
   }
 
 }

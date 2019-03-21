@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: '', component: MainComponent},
   {path: 'main', component: MainComponent},
   {path: 'writer', component: WriterComponent},
-  {path: 'reader', component: ReaderComponent},
+  {path: 'reader/:msg', component: ReaderComponent},
 
   {path: '**', component: WriterComponent}
 ];
